@@ -1,5 +1,7 @@
 import { ModuleWithProviders } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { componentFactoryName } from '@angular/compiler';
+
 import { HomeComponent } from './home/home.component';
 import {  DirectoryComponent } from './directory/directory.component';
 
