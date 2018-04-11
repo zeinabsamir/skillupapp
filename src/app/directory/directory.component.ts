@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectoryComponent implements OnInit {
 
-  constructor() { }
+  ninjas = [
+    {name: 'zeinab', belt: 'black'},
+    {name: 'Ahmed', belt: 'red'},
+    {name: 'lelia', belt: 'purple'},
+  ];
+
+  constructor() {}
 
   ngOnInit() {
   }

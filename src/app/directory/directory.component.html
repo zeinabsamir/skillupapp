@@ -1,3 +1,13 @@
-<p>
-  directory works!
-</p>
+<h2>Ninja Listings</h2>
+ 
+<ul id="ninja-listing">
+  <li *ngFor="let ninja of ninjas">
+    <div class="single-ninja">
+      <!-- belt colour -->
+      <span [ngStyle]="{background: ninja.belt}">{{ninja.belt}} belt</span>
+      <!-- ninja colour -->
+      <h3>{{ninja.name}}</h3>
+    </div>
+
+  </li>
+</ul>
