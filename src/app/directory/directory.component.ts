@@ -9,11 +9,7 @@ import { LoggingService } from '../logging.service';
 })
 export class DirectoryComponent implements OnInit {
 
-  ninjas = [
-    {name: 'zeinab', belt: 'black'},
-    {name: 'Ahmed', belt: 'red'},
-    {name: 'lelia', belt: 'purple'},
-  ];
+  ninjas = [];
 
   constructor(private logger: LoggingService) {}
 
