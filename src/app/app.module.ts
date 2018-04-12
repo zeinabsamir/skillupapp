@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { rootRouting } from './app.router';
 import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -23,6 +24,7 @@ import { FilterPipe } from './filter.pipe';
     rootRouting,
     RouterModule,
     FormsModule,
+    HttpModule,
   ],
   providers: [LoggingService],
   bootstrap: [AppComponent]
