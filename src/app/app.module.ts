@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { LoggingService } from './logging.service';
 import { FilterPipe } from './filter.pipe';
+import { DataService } from './data.service';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { FilterPipe } from './filter.pipe';
     FormsModule,
     HttpModule,
   ],
-  providers: [LoggingService],
+  providers: [LoggingService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

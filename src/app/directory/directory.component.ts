@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggingService } from '../logging.service';
-
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-directory',
@@ -11,12 +11,15 @@ export class DirectoryComponent implements OnInit {
 
   ninjas = [];
 
-  constructor(private logger: LoggingService) {}
+  constructor(private logger: LoggingService, private dataService: DataService) {}
 
      logIt() {
        this.logger.loging();
      }
   ngOnInit() {
+    this.dataService.fetchData().subscribe(
+      (data) => this.ninjas = data
+    );
   }
 
 }
