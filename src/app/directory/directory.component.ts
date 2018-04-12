@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoggingService } from '../logging.service';
 
 
 @Component({
@@ -14,8 +15,11 @@ export class DirectoryComponent implements OnInit {
     {name: 'lelia', belt: 'purple'},
   ];
 
-  constructor() {}
+  constructor(private logger: LoggingService) {}
 
+     logIt() {
+       this.logger.loging();
+     }
   ngOnInit() {
   }
 
